@@ -1,0 +1,106 @@
+*  Generated for: PrimeSim
+*  Design library name: sm_8-DAC
+*  Design cell name: sm_8-bit_DAC_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 17:12:02 2022
+
+.global gnd!
+********************************************************************************
+* Library          : sm_8-DAC
+* Cell             : sm_switch
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sm_switch vb vbias vin vout
+xm2 vbias vin vout vb n105 w=1.500m l=80n nf=500 m=1
+.ends sm_switch
+
+********************************************************************************
+* Library          : sm_8-DAC
+* Cell             : sm_8-bit_DAC
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sm_8-bit_dac d0 d1 d2 d3 d4 d5 d6 d7 vdd vout vss
+xm22 net119 net147 net87 vdd p105 w=0.256000m l=0.03u nf=128 m=1
+xm21 net183 net147 net83 vdd p105 w=0.128000m l=0.03u nf=64 m=1
+xm20 net87 net132 vdd vdd p105 w=0.256000m l=0.03u nf=128 m=1
+xm19 net83 net132 vdd vdd p105 w=0.128000m l=0.03u nf=64 m=1
+xm18 net179 net147 net71 vdd p105 w=64u l=0.03u nf=32 m=1
+xm17 net71 net132 vdd vdd p105 w=64u l=0.03u nf=32 m=1
+xm16 net175 net147 net63 vdd p105 w=32u l=0.03u nf=16 m=1
+xm15 net63 net132 vdd vdd p105 w=32u l=0.03u nf=16 m=1
+xm14 net171 net147 net55 vdd p105 w=16u l=0.03u nf=8 m=1
+xm12 net167 net147 net47 vdd p105 w=8u l=0.03u nf=4 m=1
+xm11 net45 net132 vdd vdd p105 w=4u l=0.03u nf=2 m=1
+xm6 net147 net147 net132 vdd p105 w=2u l=0.03u nf=1 m=1
+xm5 net132 net132 vdd vdd p105 w=2u l=0.03u nf=1 m=1
+xm4 net47 net132 vdd vdd p105 w=8u l=0.03u nf=4 m=1
+xm3 net163 net147 net45 vdd p105 w=4u l=0.03u nf=2 m=1
+xm2 net159 net147 net9 vdd p105 w=2u l=0.03u nf=1 m=1
+xm1 net9 net132 vdd vdd p105 w=2u l=0.03u nf=1 m=1
+xm13 net55 net132 vdd vdd p105 w=16u l=0.03u nf=8 m=1
+i10 net147 vout dc=0.01m
+xi36 vss net159 d0 vout sm_switch
+xi37 vss net163 d1 vout sm_switch
+xi38 vss net167 d2 vout sm_switch
+xi39 vss net171 d3 vout sm_switch
+xi40 vss net175 d4 vout sm_switch
+xi41 vss net179 d5 vout sm_switch
+xi42 vss net183 d6 vout sm_switch
+xi43 vss net119 d7 vout sm_switch
+.ends sm_8-bit_dac
+
+********************************************************************************
+* Library          : sm_8-DAC
+* Cell             : sm_8-bit_DAC_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi18 d0 d1 d2 d3 d4 d5 d6 d7 net77 vout gnd! sm_8-bit_dac
+v1 net77 gnd! dc=1.2
+v9 d7 gnd! dc=0 pulse ( -1 1 128m 1n 1n 128m 256m )
+v8 d6 gnd! dc=0 pulse ( -1 1 64m 1n 1n 64m 128m )
+v7 d5 gnd! dc=0 pulse ( -1 1 32m 1n 1n 32m 64m )
+v6 d4 gnd! dc=0 pulse ( -1 1 16m 1n 1n 16m 32m )
+v5 d3 gnd! dc=0 pulse ( -1 1 8m 1n 1n 8m 16m )
+v4 d2 gnd! dc=0 pulse ( -1 1 4m 1n 1n 4m 8m )
+v3 d1 gnd! dc=0 pulse ( -1 1 2m 1n 1n 2m 4m )
+v2 d0 gnd! dc=0 pulse ( -1 1 1m 1n 1n 1m 2m )
+r15 vout gnd! r=200
+c21 vout gnd! c=0.01u
+
+
+
+
+
+
+
+
+.tran '0.001*(512m-0)' '512m' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(d0) v(d1) v(d2) v(d3) v(d4) v(d5) v(d6) v(d7) v(vout)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
