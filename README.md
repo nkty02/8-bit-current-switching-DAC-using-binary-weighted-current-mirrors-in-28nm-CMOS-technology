@@ -156,7 +156,7 @@ The Synopsys 28nm Process Design Kit was used to construct and simulate the give
 
 # Netlist
 
-
+8-bit DAC circuit netlist is available [here.](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/blob/11e789418e5378aed5ba05a995567fd72c1eca6c/netlist.txt)
 
 # Author 
 
@@ -171,4 +171,11 @@ Khyathi N, B.Tech in Electronic and Electrical Communication Engineering at Indi
 
 # Reference
 
+[B. Razavi, “The current-steering dac,” IEEE SOLID-STATE CIRCUITS MAGAZINE, pp. 1–5, 2018.](http://www.seas.ucla.edu/brweb/papers/Journals/BRWinter18DAC.pdf)
 
+
+[A. Anshul, “Design of low power 8-bit digital-to-analog converter with good voltage-stability.” Center for VLSI andvEmbedded System Technologies, IIIT Hyderabad, 2013, pp. 4–
+46.](https://web2py.iiit.ac.in/research_centres/publications/download/mastersthesis.pdf.b2d1fe81ef0aa0ae.416e7368756c204167617277616c202832303034333130303129202d204d53207468657369732e706466.pdf)
+
+
+[Taoufiq Bellamine, "8 Bit Current Steering DAC," A project for ECE 547 “VLSI Design”, pp. 5-20, 2007.](https://ece.umaine.edu/wp-content/uploads/sites/203/2012/05/Taoufiq_Bellamine_ECE547Report.pdf)
