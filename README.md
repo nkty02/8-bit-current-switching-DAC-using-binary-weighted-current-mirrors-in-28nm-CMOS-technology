@@ -2,17 +2,17 @@
 The design of an 8-bit current switching DAC employing binary weighted current mirrors is available in this repository. It is based on the Synopsys Custom Compiler and is manufactured on the 28nm technology node.
 
 # Table of contents
-- [Abstract]()
-- [Detailed Explanation with reference Block diagram]()
-- [Tool used]()
-- [MOS Switch]()
-- [8-bit current switching DAC using binary weighted current mirrors]() 
-- [Simulation results]()
-- [Transistor count for 8-bit current switching DAC using binary weighted current mirrors]()
-- [Netlist]()
-- [Author]()
-- [Acknowledgements]()
-- [Reference]()
+- [Abstract](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology#abstract)
+- [Detailed Explanation with reference Block diagram](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#detailed-explanation-with-reference-block-diagram)
+- [Tool used](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#tool-used)
+- [MOS Switch](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#mos-switch)
+- [8-bit current switching DAC using binary weighted current mirrors](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#8-bit-current-switching-dac-using-binary-weighted-current-mirrors-1) 
+- [Simulation results](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#simulation-results)
+- [Transistor count for 8-bit current switching DAC using binary weighted current mirrors](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#transistor-count-for-8-bit-current-switching-dac-using-binary-weighted-current-mirrors)
+- [Netlist](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#netlist)
+- [Author](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#author)
+- [Acknowledgements](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#acknowledgements)
+- [Reference](https://github.com/nkty02/8-bit-current-switching-DAC-using-binary-weighted-current-mirrors-in-28nm-CMOS-technology/edit/main/README.md#reference)
 
 # Abstract
 Many systems use digital-to-analog converters (DACs),including communication transmitters and consumer devices. 
