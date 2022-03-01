@@ -45,8 +45,8 @@ arise from mismatches between them.
 
 ## Design specifications of this project :
 
-|  |  |
-| :-------------: | :-------------: | 
+| Parameter | Value |
+| :------------- | :------------- | 
 | Supply Voltage V<sub>dd</sub> | 1.2 V |
 | Golden current source  | 0.01mA |
 | Output swing  | 550mV |
